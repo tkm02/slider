@@ -1,0 +1,45 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    /* background:rgba(52, 61, 127, 0.232);.0 */
+}
+.container{
+    /* position: absolute; */
+    position: relative;
+    height: 50vh;
+    
+
+}
+.container img{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.container img.active{
+    opacity: 1;
+}
+.suivant, .precedent{
+    color: white;
+    /* background-color: white; */
+    /* width: 50px;
+    height: 50px; */
+    /* border-radius: 50%; */
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.suivant{
+    right: 2rem;
+}
